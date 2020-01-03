@@ -90,7 +90,9 @@ class Item extends CI_Model{
             WHERE 
             name LIKE '%".$this->db->escape_like_str($value)."%'
             || 
-            code LIKE '%".$this->db->escape_like_str($value)."%'";
+			code LIKE '%".$this->db->escape_like_str($value)."%'
+			|| 
+			description LIKE '%".$this->db->escape_like_str($value)."%'";
         
         $run_q = $this->db->query($q, [$value, $value]);
         

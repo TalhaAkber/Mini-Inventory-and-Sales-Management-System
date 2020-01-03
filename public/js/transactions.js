@@ -186,7 +186,7 @@ $(document).ready(function(){
         //remove any error message we might have
         $("#amountTenderedErr").html("");
         
-        //unset the values of cashAmount and posAmount
+        //unset the values of  and posAmount
         $("#cashAmount, #posAmount").val("");
         
         if(modeOfPayment === "POS"){
@@ -256,7 +256,7 @@ $(document).ready(function(){
         e.preventDefault();
 		
 		return new Promise((resolve, reject)=>{
-			$("#modeOfPayment").val("");
+			$("#modeOfPayment").val("Cash");
 			
 			resolve();
 		}).then(()=>{
@@ -266,7 +266,7 @@ $(document).ready(function(){
 		//recalculate
 	    ceipacp();
         
-        $("#modeOfPayment").val("");
+        $("#modeOfPayment").val("Cash");
     });
     
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -881,7 +881,7 @@ function calchadue(){
     var amountTendered = parseFloat($("#amountTendered").val());
 
     if(amountTendered && (amountTendered < cumAmount)){
-        $("#amountTenderedErr").html("Amount cannot be less than &#8358;"+ cumAmount);
+        $("#amountTenderedErr").html("Amount cannot be less than PKR "+ cumAmount);
 
         //remove change due if any
         $("#changeDue").html("");

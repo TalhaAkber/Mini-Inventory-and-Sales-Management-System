@@ -56,7 +56,7 @@ defined('BASEPATH') OR exit('');
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="<?=base_url()?>" style="margin-top:-15px">
-                        <img src="<?=base_url()?>public/images/logo_black.png" alt="logo" class="img-responsive" width="73px">
+                        <img src="<?=base_url()?>public/images/receipt_logo_book.png" alt="logo" class="img-responsive" width="50px">
                     </a>
                 </div>
 
@@ -125,7 +125,7 @@ defined('BASEPATH') OR exit('');
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                             <a>
-                                Total Earned Today: <b>&#8358;<span id="totalEarnedToday"></span></b>
+                                Total Earned Today: <b>PKR <span id="totalEarnedToday"></span></b>
                             </a>
                         </li>
                         <li class="dropdown">
@@ -231,7 +231,7 @@ defined('BASEPATH') OR exit('');
         <footer class="container-fluid text-center hidden-print">
             <p>
                 <i class="fa fa-copyright"></i>
-                Copyright <a href="http://www.amirsanni.com">Amir Sanni</a> (2016)
+                Copyright (2019)
             </p>
         </footer>
 
