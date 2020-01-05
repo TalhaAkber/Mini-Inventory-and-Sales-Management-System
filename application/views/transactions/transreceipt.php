@@ -7,8 +7,8 @@ defined('BASEPATH') OR exit('');
     <div class="row">
         <div class="col-xs-12 text-center text-uppercase">
             <center style='margin-bottom:5px'><img src="<?=base_url()?>public/images/receipt_logo_book.png" alt="logo" class="img-responsive" width="60px"></center>
-            <b>VIP Book Store, Shadman 2</b>
-            <div>+92 123123123</div>
+            <b>VIP Book Bank, Shadman 2</b>
+            <div>+92 344 2194697</div>
         </div>
     </div>
     <div class="row text-center">
